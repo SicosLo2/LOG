@@ -1,0 +1,140 @@
+2025-03-06 01:36:32,524 - 视频去重AI - INFO - 使用设备: cuda
+2025-03-06 01:36:32,525 - 视频去重AI - INFO - 正在加载VGG19模型...
+2025-03-06 01:36:32,541 - tensorflow - WARNING - From D:\Program Files\Python\Python3.11\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-03-06 01:36:32,666 - tensorflow - WARNING - From D:\Program Files\Python\Python3.11\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2025-03-06 01:36:52,834 - 视频去重AI - INFO - 模型加载完成
+2025-03-06 01:36:52,834 - 视频去重AI - INFO - 开始处理视频: F:\tk成品\美国\竖屏搬运模板_16.mp4
+2025-03-06 01:36:53,384 - 视频去重AI - INFO - 正在检测视频场景: F:\tk成品\美国\竖屏搬运模板_16.mp4
+2025-03-06 01:37:16,906 - 视频去重AI - INFO - 检测到 42 个场景
+2025-03-06 01:37:16,907 - 视频去重AI - INFO - 处理场景 1/42: 0.00s - 0.10s
+2025-03-06 01:37:16,908 - 视频去重AI - INFO - 处理场景 2/42: 0.10s - 1.23s
+2025-03-06 01:37:16,952 - 视频去重AI - INFO - 处理场景 3/42: 1.23s - 1.80s
+2025-03-06 01:37:17,416 - 视频去重AI - INFO - 处理场景 4/42: 1.80s - 2.47s
+2025-03-06 01:37:17,741 - 视频去重AI - INFO - 处理场景 5/42: 2.47s - 3.67s
+2025-03-06 01:39:09,982 - 视频去重AI - INFO - 使用设备: cuda
+2025-03-06 01:39:09,982 - 视频去重AI - INFO - 正在加载VGG19模型...
+2025-03-06 01:39:09,989 - tensorflow - WARNING - From D:\Program Files\Python\Python3.11\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-03-06 01:39:10,041 - tensorflow - WARNING - From D:\Program Files\Python\Python3.11\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2025-03-06 01:39:10,423 - 视频去重AI - INFO - 模型加载完成
+2025-03-06 01:39:10,423 - 视频去重AI - INFO - 开始处理视频: F:\tk成品\美国\竖屏搬运模板_16.mp4
+2025-03-06 01:39:10,901 - 视频去重AI - INFO - 正在检测视频场景: F:\tk成品\美国\竖屏搬运模板_16.mp4
+2025-03-06 01:39:34,252 - 视频去重AI - INFO - 检测到 42 个场景
+2025-03-06 01:39:34,252 - 视频去重AI - INFO - 处理场景 1/42: 0.00s - 0.10s
+2025-03-06 01:39:34,254 - 视频去重AI - INFO - 处理场景 2/42: 0.10s - 1.23s
+2025-03-06 01:39:34,300 - 视频去重AI - INFO - 处理场景 3/42: 1.23s - 1.80s
+2025-03-06 01:39:34,857 - 视频去重AI - INFO - 处理场景 4/42: 1.80s - 2.47s
+2025-03-06 01:39:35,181 - 视频去重AI - INFO - 处理场景 5/42: 2.47s - 3.67s
+2025-03-06 01:39:35,472 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:39:35,472 - 视频去重AI - INFO - 处理场景 6/42: 3.67s - 7.73s
+2025-03-06 01:39:35,989 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:39:35,990 - 视频去重AI - INFO - 处理场景 7/42: 7.73s - 8.70s
+2025-03-06 01:42:05,988 - 视频去重AI - ERROR - 输入文件不存在: input.mp4
+2025-03-06 01:43:21,745 - 视频去重AI - INFO - 使用设备: cuda
+2025-03-06 01:43:21,746 - 视频去重AI - INFO - 正在加载VGG19模型...
+2025-03-06 01:43:21,752 - tensorflow - WARNING - From D:\Program Files\Python\Python3.11\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-03-06 01:43:21,804 - tensorflow - WARNING - From D:\Program Files\Python\Python3.11\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2025-03-06 01:43:22,212 - 视频去重AI - INFO - 模型加载完成
+2025-03-06 01:43:22,212 - 视频去重AI - INFO - 开始处理视频: F:\tk成品\美国\竖屏搬运模板_16.mp4
+2025-03-06 01:43:22,701 - 视频去重AI - INFO - 正在检测视频场景: F:\tk成品\美国\竖屏搬运模板_16.mp4
+2025-03-06 01:43:45,985 - 视频去重AI - INFO - 检测到 42 个场景
+2025-03-06 01:43:45,986 - 视频去重AI - INFO - 处理场景 1/42: 0.00s - 0.10s
+2025-03-06 01:43:45,986 - 视频去重AI - INFO - 对场景应用速度变换: 0.00s - 0.10s
+2025-03-06 01:43:45,988 - 视频去重AI - INFO - 处理场景 2/42: 0.10s - 1.23s
+2025-03-06 01:43:46,033 - 视频去重AI - INFO - 对场景应用逐帧变换: 0.10s - 1.23s
+2025-03-06 01:43:46,036 - 视频去重AI - ERROR - 音频处理出错: cannot import name 'time_mirror' from 'moviepy.audio.fx.all' (D:\Program Files\Python\Python3.11\Lib\site-packages\moviepy\audio\fx\all\__init__.py)
+2025-03-06 01:43:46,036 - 视频去重AI - INFO - 处理场景 3/42: 1.23s - 1.80s
+2025-03-06 01:43:46,524 - 视频去重AI - INFO - 对场景应用速度变换: 1.23s - 1.80s
+2025-03-06 01:43:46,526 - 视频去重AI - INFO - 处理场景 4/42: 1.80s - 2.47s
+2025-03-06 01:43:46,769 - 视频去重AI - INFO - 对场景应用逐帧变换: 1.80s - 2.47s
+2025-03-06 01:43:46,812 - 视频去重AI - ERROR - 音频处理出错: cannot import name 'time_mirror' from 'moviepy.audio.fx.all' (D:\Program Files\Python\Python3.11\Lib\site-packages\moviepy\audio\fx\all\__init__.py)
+2025-03-06 01:43:46,812 - 视频去重AI - INFO - 处理场景 5/42: 2.47s - 3.67s
+2025-03-06 01:43:47,098 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:47,099 - 视频去重AI - INFO - 处理场景 6/42: 3.67s - 7.73s
+2025-03-06 01:43:47,620 - 视频去重AI - INFO - 对场景应用裁剪缩放: 3.67s - 7.73s
+2025-03-06 01:43:47,622 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:47,623 - 视频去重AI - INFO - 处理场景 7/42: 7.73s - 8.70s
+2025-03-06 01:43:47,965 - 视频去重AI - INFO - 对场景应用逐帧变换: 7.73s - 8.70s
+2025-03-06 01:43:48,072 - 视频去重AI - INFO - 处理场景 8/42: 8.70s - 10.27s
+2025-03-06 01:43:48,514 - 视频去重AI - INFO - 对场景应用速度变换: 8.70s - 10.27s
+2025-03-06 01:43:48,514 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:48,514 - 视频去重AI - INFO - 处理场景 9/42: 10.27s - 10.40s
+2025-03-06 01:43:49,236 - 视频去重AI - INFO - 对场景应用裁剪缩放: 10.27s - 10.40s
+2025-03-06 01:43:49,244 - 视频去重AI - INFO - 处理场景 10/42: 10.40s - 13.90s
+2025-03-06 01:43:49,300 - 视频去重AI - INFO - 对场景应用速度变换: 10.40s - 13.90s
+2025-03-06 01:43:49,301 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:49,301 - 视频去重AI - INFO - 处理场景 11/42: 13.90s - 15.10s
+2025-03-06 01:43:49,649 - 视频去重AI - INFO - 对场景应用裁剪缩放: 13.90s - 15.10s
+2025-03-06 01:43:49,653 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:49,653 - 视频去重AI - INFO - 处理场景 12/42: 15.10s - 16.40s
+2025-03-06 01:43:50,232 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:50,233 - 视频去重AI - INFO - 处理场景 13/42: 16.40s - 18.43s
+2025-03-06 01:43:50,822 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:50,823 - 视频去重AI - INFO - 处理场景 14/42: 18.43s - 18.77s
+2025-03-06 01:43:51,178 - 视频去重AI - INFO - 对场景应用逐帧变换: 18.43s - 18.77s
+2025-03-06 01:43:51,328 - 视频去重AI - INFO - 处理场景 15/42: 18.77s - 19.00s
+2025-03-06 01:43:51,469 - 视频去重AI - INFO - 处理场景 16/42: 19.00s - 22.73s
+2025-03-06 01:43:51,570 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:51,571 - 视频去重AI - INFO - 处理场景 17/42: 22.73s - 22.87s
+2025-03-06 01:43:51,907 - 视频去重AI - INFO - 处理场景 18/42: 22.87s - 23.13s
+2025-03-06 01:43:51,961 - 视频去重AI - INFO - 对场景应用速度变换: 22.87s - 23.13s
+2025-03-06 01:43:51,962 - 视频去重AI - INFO - 处理场景 19/42: 23.13s - 25.23s
+2025-03-06 01:43:52,079 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:52,079 - 视频去重AI - INFO - 处理场景 20/42: 25.23s - 28.83s
+2025-03-06 01:43:52,407 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:52,408 - 视频去重AI - INFO - 处理场景 21/42: 28.83s - 31.60s
+2025-03-06 01:43:52,747 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:52,748 - 视频去重AI - INFO - 处理场景 22/42: 31.60s - 34.80s
+2025-03-06 01:43:53,066 - 视频去重AI - INFO - 对场景应用逐帧变换: 31.60s - 34.80s
+2025-03-06 01:43:53,066 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:53,067 - 视频去重AI - INFO - 处理场景 23/42: 34.80s - 36.53s
+2025-03-06 01:43:53,394 - 视频去重AI - INFO - 对场景应用速度变换: 34.80s - 36.53s
+2025-03-06 01:43:53,395 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:53,395 - 视频去重AI - INFO - 处理场景 24/42: 36.53s - 37.50s
+2025-03-06 01:43:53,713 - 视频去重AI - INFO - 对场景应用裁剪缩放: 36.53s - 37.50s
+2025-03-06 01:43:53,739 - 视频去重AI - INFO - 处理场景 25/42: 37.50s - 37.77s
+2025-03-06 01:43:54,156 - 视频去重AI - INFO - 对场景应用裁剪缩放: 37.50s - 37.77s
+2025-03-06 01:43:54,159 - 视频去重AI - INFO - 处理场景 26/42: 37.77s - 38.37s
+2025-03-06 01:43:54,273 - 视频去重AI - INFO - 对场景应用逐帧变换: 37.77s - 38.37s
+2025-03-06 01:43:54,595 - 视频去重AI - INFO - 处理场景 27/42: 38.37s - 38.63s
+2025-03-06 01:43:54,854 - 视频去重AI - INFO - 对场景应用逐帧变换: 38.37s - 38.63s
+2025-03-06 01:43:54,958 - 视频去重AI - INFO - 处理场景 28/42: 38.63s - 38.67s
+2025-03-06 01:43:55,069 - 视频去重AI - INFO - 处理场景 29/42: 38.67s - 38.73s
+2025-03-06 01:43:55,083 - 视频去重AI - INFO - 对场景应用速度变换: 38.67s - 38.73s
+2025-03-06 01:43:55,084 - 视频去重AI - INFO - 处理场景 30/42: 38.73s - 38.77s
+2025-03-06 01:43:55,112 - 视频去重AI - INFO - 对场景应用速度变换: 38.73s - 38.77s
+2025-03-06 01:43:55,113 - 视频去重AI - INFO - 处理场景 31/42: 38.77s - 38.80s
+2025-03-06 01:43:55,128 - 视频去重AI - INFO - 对场景应用裁剪缩放: 38.77s - 38.80s
+2025-03-06 01:43:55,130 - 视频去重AI - INFO - 处理场景 32/42: 38.80s - 39.20s
+2025-03-06 01:43:55,142 - 视频去重AI - INFO - 对场景应用裁剪缩放: 38.80s - 39.20s
+2025-03-06 01:43:55,152 - 视频去重AI - INFO - 处理场景 33/42: 39.20s - 40.13s
+2025-03-06 01:43:55,324 - 视频去重AI - INFO - 处理场景 34/42: 40.13s - 40.50s
+2025-03-06 01:43:55,720 - 视频去重AI - INFO - 对场景应用裁剪缩放: 40.13s - 40.50s
+2025-03-06 01:43:55,724 - 视频去重AI - INFO - 处理场景 35/42: 40.50s - 41.67s
+2025-03-06 01:43:55,909 - 视频去重AI - INFO - 对场景应用裁剪缩放: 40.50s - 41.67s
+2025-03-06 01:43:55,911 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:55,911 - 视频去重AI - INFO - 处理场景 36/42: 41.67s - 42.17s
+2025-03-06 01:43:56,416 - 视频去重AI - INFO - 对场景应用速度变换: 41.67s - 42.17s
+2025-03-06 01:43:56,422 - 视频去重AI - ERROR - 音频处理出错: cannot import name 'time_mirror' from 'moviepy.audio.fx.all' (D:\Program Files\Python\Python3.11\Lib\site-packages\moviepy\audio\fx\all\__init__.py)
+2025-03-06 01:43:56,423 - 视频去重AI - INFO - 处理场景 37/42: 42.17s - 44.37s
+2025-03-06 01:43:56,639 - 视频去重AI - INFO - 对场景应用逐帧变换: 42.17s - 44.37s
+2025-03-06 01:43:56,748 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:56,748 - 视频去重AI - INFO - 处理场景 38/42: 44.37s - 45.47s
+2025-03-06 01:43:57,094 - 视频去重AI - INFO - 对场景应用速度变换: 44.37s - 45.47s
+2025-03-06 01:43:57,102 - 视频去重AI - INFO - 处理场景 39/42: 45.47s - 47.00s
+2025-03-06 01:43:57,585 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:57,585 - 视频去重AI - INFO - 处理场景 40/42: 47.00s - 47.70s
+2025-03-06 01:43:58,257 - 视频去重AI - INFO - 对场景应用速度变换: 47.00s - 47.70s
+2025-03-06 01:43:58,266 - 视频去重AI - ERROR - 音频处理出错: cannot import name 'time_mirror' from 'moviepy.audio.fx.all' (D:\Program Files\Python\Python3.11\Lib\site-packages\moviepy\audio\fx\all\__init__.py)
+2025-03-06 01:43:58,267 - 视频去重AI - INFO - 处理场景 41/42: 47.70s - 49.77s
+2025-03-06 01:43:58,593 - 视频去重AI - INFO - 对场景应用裁剪缩放: 47.70s - 49.77s
+2025-03-06 01:43:58,595 - 视频去重AI - ERROR - 音频处理出错: arrays to stack must be passed as a "sequence" type such as list or tuple.
+2025-03-06 01:43:58,595 - 视频去重AI - INFO - 处理场景 42/42: 49.77s - 49.87s
+2025-03-06 01:43:58,933 - 视频去重AI - INFO - 对场景应用速度变换: 49.77s - 49.87s
+2025-03-06 01:43:59,101 - 视频去重AI - INFO - 正在保存视频到: F:\tk成品\美国\111.mp4
+2025-03-06 01:46:03,117 - 视频去重AI - INFO - 视频处理完成: F:\tk成品\美国\111.mp4
