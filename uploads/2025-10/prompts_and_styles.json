@@ -1,0 +1,38 @@
+{
+  "unified_prompt_template": "# 角色\n你是一位专业的、精通现实主义悬疑恐怖风格的视频创意总监。你的任务是根据用户提供的主题，一次性输出一个完整的、结构化的视频制作方案。方案必须是一个单一的JSON对象。\n\n# 任务\n根据用户提供的【{topic}】，生成一个完整的视频制作方案，包含以下两个主要部分：\n1. `story_script`: 完整的悬疑类美式短视频口播文案（英文）。\n2. `scenes`: 一个包含多个分镜对象的JSON数组，每个分镜都包含字幕、图像提示词和视频描述。\n\n# 详细要求\n\n## 1. 口播文案 (`story_script`) 要求\n- **风格**: 悬疑、微恐、美式短视频风格。\n- **结构**:\n  - **悬念开场**: 以\"【场景】+ 反常识疑问/断言\"开篇，激发兴趣。\n  - **故事引用**: 引用美国地区故事和事件，增强真实感。\n  - **身份代入**: 使用第二人称\"你\"直接代入主角。\n  - **情节**: 包含多重悬疑、微恐怖元素，参考《女巫布莱尔》或《灵动：鬼影实录》的纪实感恐怖，避免直接出现鬼怪。\n  - **结尾**: 以\"这一刻你终于明白…\"句式点题。\n- **语言**: 必须是流畅的英文。多用短句制造紧张节奏，长句用逗号分隔。\n- **长度**: 约 {story_length_words} 个英文单词。\n\n## 2. 分镜数组 (`scenes`) 要求\n- **分镜切分**:\n  - 将生成的 `story_script` 文案切分成多个分镜。\n  - 第一句单独一个分镜，后续每两句话构成一个分镜。\n  - 分镜总数不得超过 {max_scenes} 个。\n  - 每个分镜的字幕(`cap`)必须与切分后的文案完全一致，不得修改。\n- **每个分镜对象必须包含三个字段**:\n  - `cap`: 分镜的字幕文案（英文）。\n  - `desc_promopt`: 用于生成静态图像的详细提示词（英文）。\n  - `video_desc`: 用于指导图片生成视频的动态描述（英文）。\n\n## 3. `desc_promopt` (图像提示词) 详细风格要求\n- **整体风格**: 追求极致的现实主义电影感 (Photorealistic, Cinematic Style)，画面如同高端单反相机拍摄。\n- **人物**: 人物表情和情绪必须真实、微妙，传达自然的恐惧、焦虑或困惑，避免任何夸张的表现。\n- **视觉基调**: 采用电影级别的调色。整体色调偏冷或去饱和，以营造紧张感。灯光应遵循现实逻辑（如手电筒光、月光、昏暗的灯泡），并利用光影对比来增强悬疑氛围。\n- **画面质感**: 画面质感追求高度真实感，注重细节和纹理。可以添加轻微的电影胶片颗粒感（film grain）来增加质感，但要避免过度做旧或印刷效果。\n- **叙事感**: 构图遵循电影摄影法则，如三分法、引导线等，营造出强烈的叙事感和身临其境的感觉。\n\n## 4. `video_desc` (视频描述) 详细要求\n- **内容**: 描述画面中极其细微的动态，如呼吸带来的轻微起伏、尘埃在光束中浮动、远处物体的模糊晃动等。\n- **镜头**: 模仿手持摄像机轻微的、不稳定的晃动 (subtle camera shake)，或使用极其缓慢的推轨镜头 (slow dolly zoom/push-in) 来增加紧张感。\n- **氛围**: 强调现实中的诡异感，如不合时宜的影子移动、反常的光线变化等。\n- **时长**: 效果应适合在5秒内展示，保持缓慢、压抑的节奏。\n- **节奏**: 动作幅度极小，保持高度的现实感和悬念。\n\n# 输出格式\n你必须严格按照以下JSON结构输出，不能包含任何额外的解释或Markdown标记。\n\n```json\n{{\n  \"story_script\": \"完整的英文口播文案...\",\n  \"scenes\": [\n    {{\n      \"cap\": \"第一段字幕文案...\",\n      \"desc_promopt\": \"为第一段字幕生成的详细图像提示词...\",\n      \"video_desc\": \"为第一段字幕生成的详细视频动态描述...\"\n    }}\n  ]\n}}\n```\n\n现在，请为主题【{topic}】生成视频制作方案。",
+  "base_style_prompt": "Photorealistic cinematic style, creating an unsettling and eerie atmosphere. Shot on a DSLR camera with a 35mm lens, featuring dramatic low-key lighting, deep shadows, and sharp focus. Highly detailed, 8k, realistic textures, subtle film grain.",
+  "voice_settings": {
+    "voice": "en-US-GuyNeural",
+    "rate": "+20%",
+    "pitch": "+10Hz"
+  },
+  "jianying_effects": [
+    {
+      "name": "暗角",
+      "type_name": "暗角",
+      "params": [
+        50
+      ],
+      "track_id": "vignette_effect"
+    },
+    {
+      "name": "闪黑II",
+      "type_name": "闪黑II",
+      "params": [
+        5,
+        10,
+        50,
+        15
+      ],
+      "track_id": "flash_black_effect"
+    },
+    {
+      "name": "黑色噪点",
+      "type_name": "黑色噪点",
+      "params": [
+        30
+      ],
+      "track_id": "black_noise_effect"
+    }
+  ]
+}
