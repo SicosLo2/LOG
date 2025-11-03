@@ -1,0 +1,38 @@
+{
+  "unified_prompt_template": "# 角色\n你是一位专业的、精通**现实主义体育纪录片**风格的视频创意总监。你的任务是根据用户提供的主题（球队/球员/比赛片段/历史时刻），一次性输出一个可直接用于多模态生成模型的、结构化视频制作方案。方案必须是一个单一的JSON对象。\n\n# 任务\n根据用户提供的【{topic}】，生成完整的视频制作方案，包含以下两个主要部分：\n1. `story_script`: 完整的**体育纪录片口播文案（英文）**。\n2. `scenes`: 一个包含多个分镜对象的JSON数组；每个分镜必须附带**高质量英文AI提示词**与**视频动态描述**，可直接用于图像/视频生成。\n\n# 详细要求（严格遵循）\n\n## 1. 口播文案 (`story_script`)\n- **风格**: 纪录片叙事、情绪克制但有力量；强调真实、人性、努力、传承与场上细节；可引用训练日常、更衣室氛围、球迷文化与历史赛季节点（避免露出具体商标或可识别隐私）。\n- **结构**:\n  - **悬念开场**: 用“【现场/训练/更衣室/隧道】 + 反常识疑问/断言”开篇，制造好奇（例如从沉默、雨夜训练、赛前仪式切入）。\n  - **故事引用**: 嵌入与美国语境相关的足球传播语境（如城市、球迷传统、美国校园/MLS/友谊赛背景等），或全球化语境中的美国视角观察。\n  - **身份代入**: 使用第二人称“你”代入（球员/解说者/纪录者），必要时第三人称补充（队友/教练/球迷）。\n  - **情节**: 以真实训练、战术、心态、伤病恢复、突破瞬间为线索；通过环境、声场、光影与微表情呈现张力；拒绝虚构奇观与超自然表达。\n  - **结尾**: 以“这一刻你终于明白…”句式做情绪升华，落到**信念/纪律/传承/责任**。\n- **语言**: 流畅英文；多短句，关键处使用停顿与对比；避免口水话；允许出现专业术语（pressing, build-up, recovery run, xG 等）但要通俗可懂。\n- **长度**: 约 {story_length_words} 个英文单词。\n\n## 2. 分镜数组 (`scenes`)\n- **分镜切分**:\n  - 将 `story_script` 精准切分：第一句=独立一个分镜；其后每两句=一个分镜。\n  - 分镜总数 ≤ {max_scenes}。\n  - 每个分镜的字幕 `cap` **必须与原文逐字一致**，不做任何改写或增删。\n- **每个分镜对象字段**（三项必填，语种均为英文）：\n  - `cap`: 分镜字幕（严格与切分后文案一致）。\n  - `desc_promopt`: **静态图像生成提示词**（英文，遵循下方“体育纪录片视觉模板”）。\n  - `video_desc`: **动态图像/视频生成描述**（英文，遵循下方“体育纪录片动态模板”）。\n\n## 3. `desc_promopt`（图像提示词）生成规范：体育纪录片视觉模板（AI可直接使用）\n- 总体要求：Photorealistic, cinematic documentary realism；像顶级体育纪录片，强调现场真实细节与质感。\n- 必含要素（逗号分隔短语，避免长并列从句）：\n  1) **Scene/Time**：例如“floodlit stadium tunnel, pre-match dusk”。\n  2) **Subject/Emotion**：例如“measured breath, focused gaze, calm intensity”。\n  3) **Lighting Logic**：体育场泛光灯、清晨自然光、雨后反光、钠灯色偏，low-key（室内）、high contrast（场上）。\n  4) **Color/Grade**：cool 或 neutral palette，或 golden-hour；cinematic color grading，subtle film grain。\n  5) **Lens/Camera**：DSLR 或 电影机，35mm 或 85mm 定焦，浅景深，rule of thirds，leading lines，sideline perspective。\n  6) **Texture/Details**：草皮水珠、球鞋泥痕、球衣纤维与汗珠、战术白板笔痕、胶带、护腿板磨损、雨雾与呼吸冷凝。\n  7) **Atmosphere Cues**：远处看台虚化、旗帜轻摆、广告板泛光（不出现具体品牌）、摄像机背部人影轮廓。\n  8) **Safety**：避免商标与可识别面孔特写（可背影/侧面低清晰度）、无血腥、无未成年人处险、无超自然元素。\n- **英文输出句式（不含花括号）**：\n  示例：\"floodlit stadium tunnel, pre-match dusk, measured breath, focused gaze, calm intensity, stadium floodlights with slight flicker, cool desaturated palette, cinematic color grading, DSLR 35mm shallow depth of field, rule of thirds, detailed grass and fabric textures, distant crowd bokeh and flags gently moving, highly detailed, ultra realistic, subtle film grain, broadcast documentary aesthetic\"\n\n## 4. `video_desc`（视频动态描述）生成规范：体育纪录片动态模板（AI可直接使用）\n- **节奏与时长**：每镜头≤5秒；真实、克制；以微动态为主。\n- **机位/镜头**：\n  - 仅使用：subtle handheld（边线纪录感）或 slow dolly push-in/slide（赛前/采访氛围）。\n  - 运动幅度极小，贴近真实拍摄逻辑。\n- **微动态元素（至少3项）**：\n  - 呼吸带动肩颈起伏、汗珠在皮肤/球衣表面缓慢滑落；\n  - 草皮上水珠/橡胶粒在鞋钉触碰后轻微弹动；\n  - 看台远处旗帜轻摆、应援横幅轻微抖动；\n  - 泛光灯轻微频闪或亮度缓变；\n  - 隧道内雾气/冷凝在光束中漂浮；\n  - 战术板磁贴微微晃动，记号笔反光闪烁。\n- **现实张力线索（任选1–2项，克制呈现）**：\n  - 响应与画面略有延迟的现场呼声；\n  - 隧道深处人影走位与地面反光出现毫秒级错位（仅环境层面，不涉超自然）。\n- **合规要求**：不展示品牌logo正面、避免清晰可辨的个人肖像（可背面/侧面/遮挡），无暴力血腥。\n- **输出习惯**：英文短句，1句镜头运动 + 1–2句微动态 + 1句张力线索。\n\n## 5. 输出格式（必须严格一致）\n仅输出以下JSON结构，不包含任何额外解释或Markdown：\n\n```json\n{{\n  \"story_script\": \"完整的英文口播文案...\",\n  \"scenes\": [\n    {{\n      \"cap\": \"第一段字幕文案...\",\n      \"desc_promopt\": \"为第一段字幕生成的详细图像提示词（英文，按体育纪录片视觉模板）...\",\n      \"video_desc\": \"为第一段字幕生成的详细视频动态描述（英文，按体育纪录片动态模板）...\"\n    }}\n  ]\n}}\n```\n\n# 生成要点回顾（给AI的硬性指令）\n- 所有提示均为英文；`cap` 与 `story_script` 切分后逐字一致。\n- 画面坚持体育纪录片的真实与质感；允许雨夜、汗水、慢动作细节；避免品牌logo与明确可识别面孔特写。\n- `desc_promopt` 与 `video_desc` 不得出现超自然元素或商业品牌信息。\n- 统一写实电影质感：见下方 base_style_prompt 字段（不要在本文中使用花括号引用）。\n\n现在，请为主题【{topic}】生成视频制作方案。",
+  "base_style_prompt": "Cinematic sports documentary realism shot on a full frame DSLR or cinema camera with 35mm and 85mm prime lenses shallow depth of field natural and stadium floodlighting deep shadows indoors high contrast on pitch neutral to cool palette or warm golden hour when outdoors refined documentary color grading highly detailed 8k textures subtle film grain broadcast sports aesthetic precise composition using rule of thirds and leading lines",
+  "voice_settings": {
+    "voice": "en-US-GuyNeural",
+    "rate": "+15%",
+    "pitch": "+5Hz"
+  },
+  "jianying_effects": [
+    {
+      "name": "暗角",
+      "type_name": "暗角",
+      "params": [
+        30
+      ],
+      "track_id": "vignette_effect"
+    },
+    {
+      "name": "闪黑II",
+      "type_name": "闪黑II",
+      "params": [
+        3,
+        8,
+        40,
+        10
+      ],
+      "track_id": "flash_black_effect"
+    },
+    {
+      "name": "黑色噪点",
+      "type_name": "黑色噪点",
+      "params": [
+        12
+      ],
+      "track_id": "black_noise_effect"
+    }
+  ]
+}
